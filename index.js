@@ -22,5 +22,8 @@ elements and call querySelector() and querySelectorAll() on them.
 This is challenging to implement correctly, but not beyond your ability!)*/
 
 function deepestChild() {
-  
+  const divList = document.getElementById('grand-node').querySelectorAll('div')
+  var i = divList.length - 1
+
+  return divList[i]
 }
